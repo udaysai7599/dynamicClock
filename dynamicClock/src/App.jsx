@@ -1,12 +1,10 @@
-import { format } from "date-fns";
+import Clock from "./clock";
 import "./App.css";
 
 function App() {
   return (
-    <div className="container">
-      <p className="clock">
-        {format(new Date(), "PPpp")}
-      </p>
+    <div className="app">
+      <Clock />
     </div>
   );
 }
